@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tính tiền điện</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="text-center mt-5">Bài Tập Quản Lý Tuyển Sinh Viên</h2>
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          flex-wrap: nowrap;
+          align-items: center;
+        "
+      >
+        <div class="mb-3" style="width: 30%">
+          <label for="" class="form-label"></label>
+          <input
+            style="padding: 10px; font-size: 18px"
+            type="number"
+            class="form-control form-control-sm"
+            name=""
+            id="diemchuan"
+            aria-describedby="helpId"
+            placeholder="Điểm Chuẩn"
+          />
+        </div>
+        <div class="mb-3" style="width: 30%">
+          <label for="" class="form-label"></label>
+          <select class="form-select form-select-lg" name="" id="khuvuc">
+            <option selected>Chọn Khu Vực</option>
+            <option id="khuvucA" value="khuvucA">A</option>
+            <option value="khuvucB">B</option>
+            <option value="khuvucC">C</option>
+          </select>
+        </div>
+        <div class="mb-3" style="width: 30%">
+          <label for="" class="form-label"></label>
+          <select class="form-select form-select-lg" name="" id="doituong">
+            <option selected>Chọn Đối Tượng</option>
+            <option value="doituong1">1</option>
+            <option value="doituong2">2</option>
+            <option value="doituong3">3</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            flex-wrap: nowrap;
+          "
+        >
+          <div class="mb-3" style="width: 30%">
+            <label for="" class="form-label"></label>
+            <input
+              type="number"
+              name=""
+              id="mon1"
+              class="form-control"
+              placeholder="Môn thi thứ 1"
+              aria-describedby="helpId"
+            />
+          </div>
+          <div class="mb-3" style="width: 30%">
+            <label for="" class="form-label"></label>
+            <input
+              type="number"
+              name=""
+              id="mon2"
+              class="form-control"
+              placeholder="Môn thi thứ 2"
+              aria-describedby="helpId"
+            />
+          </div>
+          <div class="mb-3" style="width: 30%">
+            <label for="" class="form-label"></label>
+            <input
+              type="number"
+              name=""
+              id="mon3"
+              class="form-control"
+              placeholder="Môn thi thứ 3"
+              aria-describedby="helpId"
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        id="ketqua"
+        type="button"
+        class="btn btn-primary px-5 py-3 rounded-pill"
+      >
+        Kết Quả
+      </button>
+      <div class="alert alert-info" role="alert" style="margin-top: 10px"></div>
+    </div>
+    <div class="my-4 p-1 bg-dark" role="alert"></div>
+    <div class="baiTap2">
+      <div class="container text-center">
+        <h2 class="text-center mb-3">Bài Tập Tính Tiền Điện</h2>
+        <div class="d-flex gap-3 justify-content-center">
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="hoTen"
+              aria-describedby="helpId"
+              placeholder="Họ và Tên"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="number"
+              class="form-control"
+              name=""
+              id="soKw"
+              aria-describedby="helpId"
+              placeholder="Nhập số kw"
+            />
+          </div>
+        </div>
+        <button
+          id="ketQuaTienDien"
+          class="border-info bg-info py-2 px-3 rounded-pill"
+        >
+          Tính tiền điện
+        </button>
+        <div class="raTien alert alert-info my-3 p-3"></div>
+      </div>
+    </div>
+    <div class="my-4 p-1 bg-dark"></div>
+    <div class="baiTap3 text-center mt-5">
+      <h2>Bài tập tính thuế thu nhập cá nhân</h2>
+      <div class="container d-flex gap-3 justify-content-center">
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="hoVaTen"
+            aria-describedby="helpId"
+            placeholder="Họ và Tên"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="tongThuNhap"
+            aria-describedby="helpId"
+            placeholder="Tổng thu nhập"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soNguoi"
+            aria-describedby="helpId"
+            placeholder="Số người phụ thuộc"
+          />
+        </div>
+      </div>
+      <button
+        id="ketQuaTinhThue"
+        class="border-info bg-info py-2 px-3 rounded-pill"
+      >
+        Tính tiền thuế
+      </button>
+      <div class="ketQua alert alert-info my-3 p-3"></div>
+    </div>
+    <div class="my-4 p-1 bg-dark"></div>
+    <div class="BaiTap4">
+      <div class="container mt-5">
+        <h2 class="text-center">Bài tập tính tiền cáp</h2>
+        <div class="d-flex gap-3">
+          <div class="mb-3">
+            <select
+              class="form-select form-select-lg"
+              style="font-size: medium"
+              id="loaiKhachHang"
+              onchange="hideAndShow()"
+            >
+              <option selected>Chọn loại khách hàng</option>
+              <option value="ND">Nhà dân</option>
+              <option value="DN">Doanh nghiệp</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="maKH"
+              placeholder="Nhập mã khách hàng"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="soKenh"
+              placeholder="Số kênh cao cấp"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-select form-select-base"
+            id="soKetNoi"
+            aria-describedby="helpId"
+            placeholder="Số kết nối"
+            style="width: 16%; display: none"
+          />
+        </div>
+        <button
+          id="ketQuaTienCap"
+          type="button"
+          class="btn btn-primary px-4 py-2 rounded-pill"
+        >
+          Kết Quả
+        </button>
+        <div id="kqTienCap" class="alert alert-info mt-3 p-3"></div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./BT1.js"></script>
+  </body>
+</html>
